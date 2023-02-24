@@ -1,0 +1,7 @@
+﻿@model CityWeather; //using strong type view
+
+@await Component.InvokeAsync("Details", new {
+    city = Model
+}); 
+
+@*Invoking ViewComponent named "Details" as a part of project and passing selected city data to it*@
